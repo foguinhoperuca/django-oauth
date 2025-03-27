@@ -1,0 +1,18 @@
+Django
+python-dotenv
+termcolor
+pytest
+pytest-cov
+# psycopg2
+# psycopg2-binary
+pylint-django
+Pillow
+
+asgiref
+sqlparse
+django-unfold
+
+# To integrate with 3rd party storage services:
+django-storages
+## AWS S3
+boto3
