@@ -1,0 +1,4 @@
+-r requirements.txt
+
+django-allauth
+django-allauth[socialaccount]

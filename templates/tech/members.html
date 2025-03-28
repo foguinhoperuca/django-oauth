@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+    <title>Tech - Members Only</title>
+</head>
+<body>
+    <header>
+        <img src="{% static 'assets/member.jpeg' %}" alt="Many happy people with computer" class="logo">
+    </header>
+    <main>
+        <h1>Member's Area</h1>
+        <p>An area to members gather together.</p>
+        <p>Welcome <small>{{ user.username }}</small></p>
+        <div class="logout-btn-container">
+            <a href="{% url 'account_logout' %}" class="logout-btn">Logout</a>
+        </div>
+        <div class="logout-btn-container">
+            <a href="{% url 'index' %}" class="logout-btn">Start</a>
+        </div>
+    </main>
+</body>
+</html>
